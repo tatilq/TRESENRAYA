@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61d55014-df45-41fa-8bfa-1a5939f6f037" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Coordenada.java" beforeDir="false" afterPath="$PROJECT_DIR$/Coordenada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jugador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tablero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TresEnRaya.java" beforeDir="false" afterPath="$PROJECT_DIR$/TresEnRaya.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turno.java" beforeDir="false" afterPath="$PROJECT_DIR$/Turno.java" afterDir="false" />
-    </list>
+    <list default="true" id="61d55014-df45-41fa-8bfa-1a5939f6f037" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,9 +23,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2dwyIBdLTDGh1cdFob8J1R9sBm9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,7 +38,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "master"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
