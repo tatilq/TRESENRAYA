@@ -1,4 +1,3 @@
-import javafx.scene.control.Tab;
 public class Tablero {
     char[][] tablero;
     int filas;
