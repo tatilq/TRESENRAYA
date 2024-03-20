@@ -1,37 +1,19 @@
 public class Turno {
-    //ATRIBUTOS
-
-    public int turno;
-    //CONSTRUCTOR
-    public Turno()
-    {
-
+    static int turno; //Variará entre 0 y 1
+    public Turno(){
+        turno = 0; //Se inicizaliza en 0
     }
-
-    //METODOS
-    public void setTurno(int turno)
-    {
-       this.turno = turno;
-    }
-    public int getTurno()
-    {
+    public static int quienToca(){
         return turno;
     }
-    // devuelve el valor actual del atributo “turno”
-    public int quienToca()
-    {
-        return this.turno;
+    public static int quienNoToca(){
+        return (turno == 0) ? 1 : 0;
     }
-    // devuelve el valor opuesto al que contiene el atributo “turno”
-    public int quienNoToca( )
-    {
-        return this.turno;
+    public static void cambiar(){
+        if (turno == 0){
+            turno = 1;
+        } else if (turno == 1){
+            turno = 0;
+        }
     }
-    //cambia el valor del atributo “turno”.
-    public void cambiar( )
-    {
-
-    }
-
 }
-
