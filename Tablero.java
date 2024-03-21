@@ -52,13 +52,10 @@ public class Tablero {
     }
     public void mostrar(){
         for (int i=0;i<filas;i++){
-            System.out.println();
             for (int j=0;j<columnas;j++){
                 System.out.print(tablero[i][j]+" ");
             }
-            if (i==filas-1){
-                System.out.println();
-            }
+            System.out.println();
         }
     }
 }
