@@ -24,22 +24,23 @@ public class Jugador {
                 tablero.ponFicha(ficha,coord);
             }
         }while(tablero.esVacia(coord));
-        contador++;
+        this.contador++;
+        if (this.contador >= 3){
+            this.contador = 3;
+        }
     }
     public void mueveFicha(Tablero tablero){
         Coordenada coord = new Coordenada();
-        if (contador == 3){
+        if (this.contador == 3){
             do{
                 coord = coord.pedirPorTeclado();
                 if (!tablero.hayFicha(ficha,coord)){
                     tablero.quitaFicha(coord);
                 }
             }while(tablero.hayFicha(ficha,coord));
-
-
         }
     }
     public void haGanado (Tablero tablero){
-
+        
     }
 }
