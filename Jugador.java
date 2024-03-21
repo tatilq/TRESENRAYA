@@ -29,9 +29,6 @@ public class Jugador {
                 tablero.ponFicha(ficha,coord);
             }
         }
-        if (this.contador >= 3){
-            this.contador = 3;
-        }
         this.contador++;
     }
     public void mueveFicha(Tablero tablero){
