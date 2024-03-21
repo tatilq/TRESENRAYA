@@ -21,9 +21,9 @@ public class Coordenada {
     }
     public Coordenada pedirPorTeclado (){
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Introduce el valor de la fila : ");
+        System.out.print("Introduce el valor de la fila: ");
         int fila = teclado.nextInt();
-        System.out.println("Introduce el valor de la columna : ");
+        System.out.print("Introduce el valor de la columna: ");
         int columna = teclado.nextInt();
         return new Coordenada(fila, columna);
     }

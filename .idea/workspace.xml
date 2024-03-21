@@ -7,7 +7,11 @@
     <list default="true" id="61d55014-df45-41fa-8bfa-1a5939f6f037" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Coordenada.java" beforeDir="false" afterPath="$PROJECT_DIR$/Coordenada.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Jugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tablero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TresEnRaya.java" beforeDir="false" afterPath="$PROJECT_DIR$/TresEnRaya.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turno.java" beforeDir="false" afterPath="$PROJECT_DIR$/Turno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +56,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
@@ -74,7 +81,7 @@
       <workItem from="1710938879977" duration="279000" />
       <workItem from="1710939189025" duration="241000" />
       <workItem from="1710960195734" duration="38000" />
-      <workItem from="1710960241281" duration="7803000" />
+      <workItem from="1710960241281" duration="14138000" />
     </task>
     <servers />
   </component>
@@ -97,5 +104,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TresEnRaya.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

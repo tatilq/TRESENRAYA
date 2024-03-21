@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Jugador {
-    String nombre;
-    char ficha;
-    int contador = 1;
+    private String nombre;
+    private char ficha;
+    private int contador = 1;
     public Jugador (String nombre, char ficha){
         this.nombre = nombre;
         this.ficha = ficha;
@@ -13,34 +13,52 @@ public class Jugador {
     }
     public void putNombre (){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Escriba su nombre:");
+        System.out.print("Escriba su nombre: ");
         this.nombre = sc.nextLine();
     }
     public void colocarFicha(Tablero tablero){
-        Coordenada coord = new Coordenada();
-        do{
-            coord = coord.pedirPorTeclado();
-            if (!tablero.esVacia(coord)){
+        if (contador <= 3){
+            Coordenada coord = new Coordenada();
+            do{
+                coord = coord.pedirPorTeclado();
+            }while(!tablero.esVacia(coord));
+            if (tablero.esVacia(coord)){
                 tablero.ponFicha(ficha,coord);
             }
-        }while(tablero.esVacia(coord));
-        this.contador++;
+        }
         if (this.contador >= 3){
             this.contador = 3;
         }
+        this.contador++;
     }
     public void mueveFicha(Tablero tablero){
         Coordenada coord = new Coordenada();
+        if (this.contador >= 3){
+            this.contador = 3;
+        }
         if (this.contador == 3){
             do{
                 coord = coord.pedirPorTeclado();
-                if (!tablero.hayFicha(ficha,coord)){
-                    tablero.quitaFicha(coord);
-                }
-            }while(tablero.hayFicha(ficha,coord));
+            }while(!tablero.hayFicha(ficha,coord));
+            if (tablero.hayFicha(ficha,coord)){
+                tablero.quitaFicha(coord);
+            }
+            do{
+                coord = coord.pedirPorTeclado();
+            }while(!tablero.esVacia(coord));
+            if (tablero.esVacia(coord)){
+                tablero.ponFicha(ficha,coord);
+            }
         }
     }
     public void haGanado (Tablero tablero){
-        
+        if (tablero.hayTresEnRaya()){
+            System.out.println("El jugador '"+this.nombre+"' es el ganador!");
+        }
+        tablero.mostrar();
+    }
+
+    public int getContador() {
+        return contador;
     }
 }
