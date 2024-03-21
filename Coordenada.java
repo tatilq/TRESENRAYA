@@ -27,4 +27,9 @@ public class Coordenada {
         int columna = teclado.nextInt();
         return new Coordenada(fila, columna);
     }
+
+    @Override
+    public String toString() {
+        return "("+this.fila+","+this.columna+")";
+    }
 }
